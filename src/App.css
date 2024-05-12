@@ -1,0 +1,95 @@
+#root {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  background: white;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid white;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 16px;
+  text-align: center;
+  transition: 0.15s all;
+  cursor: pointer;
+  width: 300px;
+}
+
+.card:hover {
+  box-shadow: 4px 4px white;
+  translate: -4px -4px;
+}
+
+.card > h2 {
+  border-left: 8px solid #A9D3E9;
+  font-size: 32px;
+}
+
+.card > img {
+  border-radius: 16px;
+}
+
+.card > .tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tags > div {
+  background: white;
+  color: black;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.form {
+  padding: 16px;
+  margin: 16px;
+  border: 1px solid white;
+  border-radius: 8px;
+  box-shadow: 3px 3px white;
+}
+
+.form label {
+  font-weight: bold;
+}
+
+.form input[type="text"] {
+  border-radius: 4px;
+  height: 24px;
+  width: 100%;
+}
+
+.form input[type="submit"] {
+  width: 100%;
+  font-size: 18px;
+  padding: 8px 32px;
+  background: #28A745;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+}
+
+.form input[type="submit"]:hover {
+  translate: -3px -3px;
+  opacity: 0.8;
+  box-shadow: 3px 3px white;
+}
